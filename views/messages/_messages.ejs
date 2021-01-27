@@ -1,0 +1,41 @@
+<!-- Success -->
+<% if (success_msg != '') { %>
+<div class="alert alert-success">
+  <a
+    style="margin-left: 0.4rem"
+    id="cross"
+    class="close"
+    data-dismiss="alert"
+    aria-label="close"
+    >&times;</a
+  >
+  <p id="msg"><%= success_msg %></p>
+</div>
+<% } %>
+
+<!-- On accessing resource without login -->
+<% if (error_msg != '') { %>
+<div class="alert alert-danger">
+  <a
+    style="margin-left: 0.4rem"
+    id="cross"
+    class="close"
+    data-dismiss="alert"
+    aria-label="close"
+    >&times;</a
+  >
+  <p id="msg"><%= error_msg %></p>
+</div>
+<% } %> <% if (typeof error != 'undefined') { %>
+<div class="alert alert-danger text-center" id="addHabitError">
+  <a
+    style="margin-left: 0.4rem"
+    id="cross"
+    class="close"
+    data-dismiss="alert"
+    aria-label="close"
+    >&times;</a
+  >
+  <p id="msg"><%= error %></p>
+</div>
+<% } %>

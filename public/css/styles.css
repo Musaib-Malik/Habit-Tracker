@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+p {
+  margin: 10px 0 !important;
+}
+
+.login-container {
+  width: 400px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.login-container h3 {
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+.lead {
+  font-family: montserrat;
+  font-size: 16px;
+}
+
+#authWithGoogle {
+  font-family: Poppins;
+  text-transform: none !important;
+  font-weight: 600;
+}
+
+#authWithGoogle:hover {
+  color: white;
+}
+
+#authWithGoogle:focus {
+  box-shadow: none !important;
+}
+
+#header-title {
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+.alert {
+  padding: 5px 6px !important;
+}
+
+#cross {
+  cursor: pointer;
+}
+
+#addHabitError {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#msg {
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+.fa-tasks {
+  margin-right: 0.4rem;
+}
+
+#from {
+  text-decoration: underline;
+  font-family: Poppins;
+  font-weight: 600;
+  padding-bottom: 1.3rem;
+}
+
+form {
+  width: 50%;
+  margin: 6rem auto;
+}
+
+form div {
+  margin-bottom: 2rem !important;
+}
+
+.add-page-btn {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: Poppins;
+}
+
+.add-page-btn:focus {
+  box-shadow: none !important;
+}
+
+.container .form-group {
+  font-family: Montserrat;
+}
+
+.container .form-group .form-control {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+
+.container .form-group .form-control:focus {
+  box-shadow: none !important;
+}

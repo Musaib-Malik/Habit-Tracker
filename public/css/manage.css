@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+
+.card-header {
+  font-family: Poppins;
+}
+
+#progress,
+#status {
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+#completed,
+#incomplete {
+  font-family: Montserrat;
+  font-weight: 600;
+  padding-left: 0.6rem;
+}
+
+#progressValue {
+  padding-left: 0.6rem;
+}
+
+#habitCard {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.del {
+  background: none !important;
+  cursor: pointer;
+}
+
+.del:hover {
+  color: #c21e56 !important;
+}
+
+.del:focus,
+.edit:focus {
+  border: none !important;
+
+  box-shadow: none !important;
+  background-color: none !important;
+}
+
+#last {
+  margin-bottom: 0 !important;
+}
+
+#noneHabits {
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+#habitName {
+  padding-top: 0.46rem !important;
+  color: #6f2da8;
+}

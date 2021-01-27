@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+
+.brand-logo {
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#userName {
+  font-family: Poppins;
+  margin-top: 3rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.mail {
+  font-size: 15px;
+}
+
+.not-done {
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #aaa;
+  font-style: italic;
+}
+
+th {
+  font-family: Montserrat;
+}
+
+.del,
+.edit {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.del:hover,
+.edit:hover {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.fa-edit {
+  color: darkslateblue;
+}
+
+.fa-trash {
+  color: red;
+  background: none !important;
+  padding: 0;
+  outline: none;
+}
+.btn-float {
+  float: left;
+  margin-right: 0px;
+}
+
+#first {
+  padding-left: 4rem !important;
+}

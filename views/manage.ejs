@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habit tracker | Manage</title>
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/manage.css" />
+  </head>
+  <body>
+    <div class="container py-4">
+      <% if (habits.length > 0) { %> <% habits.forEach(habit => { %>
+      <div class="card mb-3" id="habitCard">
+        <div
+          class="card-header d-flex justify-content-between font-weight-bold"
+        >
+          <div class="pt-2" id="habitName"><%= habit.name %></div>
+          <div class="d-flex" id="options">
+            <a href="/habits/edit/<%= habit._id %>" class="btn btn-float edit"
+              ><i class="fa fa-edit"></i
+            ></a>
+
+            <form
+              action="/habits/delete/<%= habit._id %>?_method=DELETE"
+              method="POST"
+            >
+              <button class="btn del text-danger" type="submit">
+                <i class="fa fa-trash"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-title">
+            <span id="progress">Progress : </span>
+            <span id="progressValue" class="text-muted">
+              <%= habit.daysDone %> / <%= habit.totalDays %>
+            </span>
+          </p>
+          <p id="last">
+            <span id="status"> Status : </span>
+            <% if (habit.daysDone === habit.totalDays) { %>
+            <span id="completed" class="text-success">Completed</span> <% } else
+            { %> <span id="incomplete" class="text-primary">Tracking</span> <%
+            }%>
+          </p>
+        </div>
+      </div>
+      <% }) %> <% } else { %>
+      <div
+        style="height: 70vh"
+        class="d-flex justify-content-center align-items-center"
+        id="noHabitsToManage"
+      >
+        <h1 id="noneHabits">No habits to manage.</h1>
+      </div>
+      <% } %>
+    </div>
+  </body>
+</html>
